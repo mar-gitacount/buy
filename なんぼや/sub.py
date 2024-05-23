@@ -2,7 +2,7 @@ import subprocess
 from datetime import datetime
 
 # 任意の値をnumに代入
-firstnum = 253
+firstnum = 1
 num = 412
 today_date_file = datetime.now().strftime("%Y%m%d") + "error.txt"
 
@@ -38,3 +38,9 @@ if isinstance(num, int):
             # process = subprocess.run(["python", "webdriver2.py", str(i)])
 else:
     print("Error: num should be an integer.")
+
+gitpush = "gitpush.py"
+subprocess.run(["python",gitpush])
+
+# ターミナルを開いてexitを実行する
+subprocess.run(["exit"])
